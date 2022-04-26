@@ -40,7 +40,10 @@
   }
 
   @media (hover: hover) and (pointer: fine){
-    .container:hover{
+    /* .container:hover{
+      opacity: 1;
+    } */
+    .touch-hover-wrapper:hover > .container:not(:focus){      
       opacity: 1;
     }
   }
