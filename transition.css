@@ -39,15 +39,7 @@
     text-align: center;
   }
 
-  @media (hover: hover) and (pointer: fine){
-    /* .container:hover{
-      opacity: 1;
-    } */
-    .touch-hover-wrapper:hover > .container:not(:focus){      
-      opacity: 1;
-    }
-  }
-
+  
 
 
   @media only screen and (max-width: 1024px) {
@@ -56,3 +48,12 @@
       width: 100%;
     }
 }
+
+element:hover, element.hover_effect {
+  rule:properties;
+}
+
+.hover {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;        
+  }
