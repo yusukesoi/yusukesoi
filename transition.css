@@ -40,7 +40,10 @@
   }
 
   
-
+.hover {
+-webkit-user-select: none;
+-webkit-touch-callout: none;        
+}
 
   @media only screen and (max-width: 1024px) {
     .container {
@@ -49,11 +52,3 @@
     }
 }
 
-element:hover, element.hover_effect {
-  rule:properties;
-}
-
-.hover {
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;        
-  }
