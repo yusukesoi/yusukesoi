@@ -94,12 +94,10 @@
         padding:24px 200px;
       }
 
-
       a:link { text-decoration: none; }
       a:visited { text-decoration: none; }
       a:hover { text-decoration: none; }
       a:active { text-decoration: none; }
-
 
     @media only screen and (max-width: 1024px) {
       .side-margins{
@@ -123,7 +121,93 @@
         padding:8px;
       }
 }
+body {font-family: Arial, Helvetica, sans-serif;}
 
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
@@ -134,7 +218,7 @@
 <!-- Header -->
 <header class="w3-panel w3-center">
 <a href="index.html"><h1 style="margin-bottom:0px">Yusuke Soi</h1></a>
-  <h2 style="margin-bottom: 12px;">Theater production design</h2>
+  <h2 style="margin-bottom: 12px;">Theater Productions</h2>
 </header>
 
 
@@ -158,20 +242,62 @@
      -->
     
     <!-- Projects -->
-    <div class="w3-row" id="menu">
+    <!-- <div class="w3-row" id="menu"> -->
       <div class="w3-col l5 w3-padding-large">
         <!-- <h1 class="w3-center">[project name]</h1><br> -->
-        <h2>Tono's Phone Call: Animals Buying Stocks?</h2>
-        <h3>Producer, Director, Editor</h3>
-        <p class="w3-text-grey">[some stuff here about this puppet show kalsdfjkl;ajfkl; jdkfl;ajfl;ds]</p>
+        <h2>Shrek the musical @ Tri-school Productions</h2>
+        <h3>Role: Producer, Art director, Editor</h3>
+        <p class="w3-text-grey">During the pandemic, most of high school theater shows were forced to adapt to perform online or create filmed performances. Shrek the musical was a 2h show that we filmed student actors individually and separately in front of a green screen to follow CDC rules for social distancing.</p>
       </div>
       <div class="w3-col l7 w3-padding-large">
         <div class="video-container">
-          <iframe width="100%" src="https://www.youtube.com/embed/7yDy0N7a9Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <img id="myImg" style="width:100%"  src="photos/ShrekSample1.png"></img>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+
+
+    <div class="w3-col l5 w3-padding-large">
+      <!-- <h1 class="w3-center">[project name]</h1><br> -->
+      <h2>Anywhere but Earth Ep.3 @ Socks and Buttons production</h2>
+      <h3>Role: Producer, director, Editor</h3>
+      <p class="w3-text-grey">A puppet web series, "Anywhere but Earth" was a collaboration of theater artists from children's theaters in the Bay Area. An alien captain, his robot friend, and a old samurai journey through space. They find friendships and hurdles of cultral misunderstandngs.</p>
+    </div>
+    <div class="w3-col l7 w3-padding-large">
+      <div class="video-container">
+        <img id="myImg" style="width:100%"  src="photos/StoryboardSample2.png"></img>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
       </div>
     </div>
-    
+
+
+    <div class="w3-col l5 w3-padding-large">
+      <!-- <h1 class="w3-center">[project name]</h1><br> -->
+      <h2>Tono's Phone Call @ Socks and Buttons Production</h2>
+      <h3>Role: Producer, director, Editor</h3>
+      <p class="w3-text-grey"> A web series of an old samurai puppet interviewing his friends. The series celebrates the Bay Area theater artists through short sketches. </p>
+    </div>
+    <div class="w3-col l7 w3-padding-large">
+      <div class="video-container">
+        <img id="myImg" style="width:100%"  src="photos/StoryboardSample3.png"></img>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="w3-row w3-padding-64" id="menu">
       <div class="w3-col l5 w3-padding-large">
         <!-- <h1 class="w3-center">[project name]</h1><br> -->
@@ -232,6 +358,28 @@
   <p>[phone number]</p>
   <p>[email]</p>
 </footer>
+  <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 </body>
 </html>
 
