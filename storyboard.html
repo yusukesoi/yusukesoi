@@ -72,7 +72,7 @@
       }
 
      .tile-padding {
-        padding:2px;
+        padding-bottom:80px;
       } 
       .wrapper {
         display: flex;
@@ -242,52 +242,49 @@ body {font-family: Arial, Helvetica, sans-serif;}
      -->
     
     <!-- Projects -->
-    <!-- <div class="w3-row" id="menu"> -->
+    <div class="w3-row tile-padding" id="menu">
       <div class="w3-col l5 w3-padding-large">
         <!-- <h1 class="w3-center">[project name]</h1><br> -->
         <h2>Shrek the musical @ Tri-school Productions</h2>
         <h3>Role: Producer, Art director, Editor</h3>
         <p class="w3-text-grey">During the pandemic, most of high school theater shows were forced to adapt to perform online or create filmed performances. Shrek the musical was a 2h show that we filmed student actors individually and separately in front of a green screen to follow CDC rules for social distancing.</p>
       </div>
-      <div class="w3-col l7 w3-padding-large">
-        <div class="video-container">
+      <div class="w3-col l7 w3-padding-large ">
           <img id="myImg" style="width:100%"  src="photos/ShrekSample1.png"></img>
           <div id="myModal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="img01">
             <div id="caption"></div>
           </div>
-        </div>
-      </div>
-    <!-- </div> -->
-
-
-    <div class="w3-col l5 w3-padding-large">
-      <!-- <h1 class="w3-center">[project name]</h1><br> -->
-      <h2>Anywhere but Earth Ep.3 @ Socks and Buttons production</h2>
-      <h3>Role: Producer, director, Editor</h3>
-      <p class="w3-text-grey">A puppet web series, "Anywhere but Earth" was a collaboration of theater artists from children's theaters in the Bay Area. An alien captain, his robot friend, and a old samurai journey through space. They find friendships and hurdles of cultral misunderstandngs.</p>
-    </div>
-    <div class="w3-col l7 w3-padding-large">
-      <div class="video-container">
-        <img id="myImg" style="width:100%"  src="photos/StoryboardSample2.png"></img>
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
-        </div>
       </div>
     </div>
 
+    <div class="w3-row tile-padding" id="menu">
+
+      <div class="w3-col l5 w3-padding-large">
+        <!-- <h1 class="w3-center">[project name]</h1><br> -->
+        <h2>Anywhere but Earth Ep.3 @ Socks and Buttons production</h2>
+        <h3>Role: Producer, director, Editor</h3>
+        <p class="w3-text-grey">A puppet web series, "Anywhere but Earth" was a collaboration of theater artists from children's theaters in the Bay Area. An alien captain, his robot friend, and a old samurai journey through space. They find friendships and hurdles of cultral misunderstandngs.</p>
+      </div>
+      <div class="w3-col l7 w3-padding-large">
+          <img id="myImg" style="width:100%"  src="photos/StoryboardSample2.png"></img>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row tile-padding" id="menu">
 
     <div class="w3-col l5 w3-padding-large">
-      <!-- <h1 class="w3-center">[project name]</h1><br> -->
       <h2>Tono's Phone Call @ Socks and Buttons Production</h2>
       <h3>Role: Producer, director, Editor</h3>
       <p class="w3-text-grey"> A web series of an old samurai puppet interviewing his friends. The series celebrates the Bay Area theater artists through short sketches. </p>
     </div>
     <div class="w3-col l7 w3-padding-large">
-      <div class="video-container">
         <img id="myImg" style="width:100%"  src="photos/StoryboardSample3.png"></img>
         <div id="myModal" class="modal">
           <span class="close">&times;</span>
@@ -358,10 +355,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <p>[phone number]</p>
   <p>[email]</p>
 </footer>
-  <script>
+<script>
 // Get the modal
 var modal = document.getElementById("myModal");
-
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
