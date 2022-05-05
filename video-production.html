@@ -4,10 +4,12 @@
   <title>Yusuke Soi Multi-disciplinary Artist</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://bootstrapcreative.com/wp-bc/wp-content/themes/wp-bootstrap/codepen/bootstrapcreative.js?v=7"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.css">
+
   <link rel="stylesheet" href="yusuke.css">
   <link rel="stylesheet" href="transition.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +24,7 @@
       font-family: "Open Sans", Arial, sans-serif;
     }
 
+ 
     h1{
       font-family: "Open Sans";
       font-weight: 700;
@@ -138,91 +141,54 @@
     
 
     /* The Modal (background) */
-    .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      padding-top: 100px; /* Location of the box */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    .modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
     }
 
-    /* Modal Content (image) */
-    .modal-content {
-      margin: auto;
-      display: block;
-      width: 80%;
-      max-width: 700px;
-    }
     .modal-body {
       position:relative;
       padding:0px;
     }
-
-    /* Caption of Modal Image */
-    #caption {
-      margin: auto;
-      display: block;
-      width: 80%;
-      max-width: 700px;
-      text-align: center;
-      color: #ccc;
-      padding: 10px 0;
-      height: 150px;
-    }
-
-    /* Add Animation */
-    .modal-content, #caption {  
-      -webkit-animation-name: zoom;
-      -webkit-animation-duration: 0.6s;
-      animation-name: zoom;
-      animation-duration: 0.6s;
-    }
-
-    @-webkit-keyframes zoom {
-      from {-webkit-transform:scale(0)} 
-      to {-webkit-transform:scale(1)}
-    }
-
-    @keyframes zoom {
-      from {transform:scale(0)} 
-      to {transform:scale(1)}
-    }
-
-    /* The Close Button */
     .close {
-      position: absolute;
-      top: 15px;
-      right: 35px;
-      color: #f1f1f1;
-      font-size: 40px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: #bbb;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    /* 100% Image Width on Smaller Screens */
-    @media only screen and (max-width: 700px){
-      .modal-content {
-        width: 100%;
-      }
+      position:absolute;
+      right:-30px;
+      top:0;
+      z-index:999;
+      font-size:2rem;
+      font-weight: normal;
+      color:#fff;
+      opacity:1;
     }
 
     
   </style>
 </head>
 <body>
+
+
+  
+<!-- 
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">YouTube Video</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen></iframe>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   -->
+
+
+
+
 
   <!-- !PAGE CONTENT! -->
   <div class="w3-content side-margins" style="max-width:1500px">
@@ -237,90 +203,153 @@
   <!-- Page content -->
 
   <div class="w3-content" style="max-width:1100px">
-    <!-- About Section -->
-    <!-- Projects -->
+<!-- About Section -->
+  
+<!-- Projects -->
+
+
+
+    <!-- Anywhere But Earth -->
+    
     <div class="w3-row tile-padding" id="menu">
+
+      <!-- Left side. Project Description -->
       <div class="w3-col l5 w3-padding-large">
         <h2>Anywhere but Earth @ Socks and Buttons</h2>
         <h3>Role: Producer, director, Editor</h3>
         <p class="w3-text-grey">A puppet web series, "Anywhere but Earth" was a collaboration of theater artists from children's theaters in the Bay Area. An alien captain, his robot friend, and a old samurai journey through space. They find friendships and hurdles of cultral misunderstandngs.</p>
       </div>
+      <!-- Right side. Image and link -->
       <div class="w3-col l7 w3-padding-large">
-        <img id="myImg" style="width:100%"  src="photos/ABESample3.png" data-toggle="modal"></img>
+        <button type="button" class="btn btn-light video-btn" data-mdb-ripple-color="dark" data-toggle="modal" data-src="https://www.youtube.com/embed/ZMN3iwp4hX4" data-target="#myModal">
+          <img id="myImg" style="width:100%"  src="photos/ABESample3.png"></img>
+        </Button>
       </div>
 
-      <!-- modal -->
-      <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <!-- <div class="modal-body"> -->
-          <span class="close" aria-hidden="true" id="close">&times;</span>
-          <!-- <div class="embed-responsive embed-responsive-16by9"> -->
-            <iframe 
-              class="modal-content" 
-              width="560" height="315" 
-              src="https://www.youtube.com/embed/ZMN3iwp4hX4"
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-            </iframe>>
-          <!-- </div> -->
-        <!-- </div> -->
-        <!-- <div id="caption"></div> -->
-      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>        
+              <!-- 16:9 aspect ratio -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div> 
+
     </div>
 
 
 
+
+    <!-- Shrek -->
+
     <div class="w3-row tile-padding" id="menu"> 
+
+      <!-- Left side. Project Description -->
       <div class="w3-col l5 w3-padding-large">
         <h2>Shrek the musical @ Tri-school Productions</h2>
         <h3>Role: Producer, Art director, Editor</h3>
         <p class="w3-text-grey">During the pandemic, most of high school theater shows were forced to adapt to perform online or create filmed performances. Shrek the musical was a 2h show that we filmed student actors individually and separately in front of a green screen to follow CDC rules for social distancing.</p>
       </div>
-      <div class="w3-col l7 w3-padding-large">
+      <!-- Right side. Image and link -->
+      <div class="w3-col l7 w3-padding-large ">
         <img id="myImg" style="width:100%"  src="photos/ShrekSample0.png"></img>
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
       </div>
-    </div> 
+    </div>
 
+
+
+
+    <!-- Tono's Phone Call -->
 
     <div class="w3-row tile-padding" id="menu">
+
+      <!-- Left side. Project Description -->
       <div class="w3-col l5 w3-padding-large">
         <h2>Tono's Phone Call @ Socks and Buttons Production</h2>
         <h3>Role: Producer, director, Editor</h3>
         <p class="w3-text-grey"> A web series of an old samurai puppet interviewing his friends. The series celebrates the Bay Area theater artists through short sketches. </p>
       </div>
+      <!-- Right side. Image and link -->
       <div class="w3-col l7 w3-padding-large">
-        
+        <button type="button" class="btn btn-light video-btn" data-mdb-ripple-color="dark" data-toggle="modal" data-src="https://www.youtube.com/embed/ezN3TZje1EM" data-target="#myModal">
           <img id="myImg" style="width:100%"  src="photos/TonoCallSample1.png"></img>
-        
+        </Button>
       </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>        
+              <!-- 16:9 aspect ratio -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div> 
+
     </div>
 
 
-    <div class="w3-row tile-padding" id="menu"></div>
-      <div class="w3-col l5 w3-padding-large">
-        <h2>My Perfect Kastle @ Socks and Buttons Production</h2>
-        <h3>Role: Producer, director, Editor</h3>
-        <p class="w3-text-grey"> Japanese folklore web series.  </p>
-      </div>
-      <div class="w3-col l7 w3-padding-large">
-          <img id="myImg" style="width:100%"  src="photos/MPKSample2.png"></img>
-      </div>
-    </div>
     
 
+<!-- My Perfect Kastle -->
+
     <div class="w3-row tile-padding" id="menu">
+
+      <!-- Left side. Project Description -->
       <div class="w3-col l5 w3-padding-large">
         <h2>[picture of a set built]</h2>
         <h3>[role]</h3>
         <p class="w3-text-grey">[description]</p>
       </div>
+      <!-- Right side. Image and link -->
       <div class="w3-col l7 w3-padding-large">
-          <iframe width="100%" src="https://www.youtube.com/embed/DmiW12vcQYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+        <button type="button" class="btn btn-light video-btn" data-mdb-ripple-color="dark" data-toggle="modal" data-src="https://www.youtube.com/embed/5e_ZmPuMZ5Y" data-target="#myModal">
+          <img id="myImg" style="width:100%"  src="photos/MPKSample2.png"></img>
+        </Button>
       </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>        
+              <!-- 16:9 aspect ratio -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div> 
+
     </div>
     
   </div>
+
+
   <!-- Footer -->
 
   <footer id="contact" class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
@@ -336,41 +365,31 @@
     <p>[email]</p>
   </footer>
   <script>
+    $(document).ready(function() {
 
-    // when the modal is opened autoplay it  
-    $('#myModal').on('shown.bs.modal', function (e) {
-      // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-      $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
-    })
+        // Gets the video src from the data-src on each button
 
-    // Get the modal
-    var modal = document.getElementById("myModal");
+        var $videoSrc;  
+        $('.video-btn').click(function() {
+            $videoSrc = $(this).data( "src" );
+        });
+        console.log($videoSrc);
+        
+        // when the modal is opened autoplay it  
+        $('#myModal').on('shown.bs.modal', function (e) { 
+            // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+            $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+        })
+
+        // stop playing the youtube video when I close the modal
+        $('#myModal').on('hide.bs.modal', function (e) {
+            // a poor man's stop video
+            $("#video").attr('src',$videoSrc); 
+        }) 
     
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-   
-    // stop playing the youtube video when I close the modal
-    $('#myModal').on('hide.bs.modal', function (e) {
-      // a poor man's stop video
-      $("#video").attr('src',$videoSrc); 
-    })  
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.style.display = "none";
-    }
-    </script>
-    
+    // document ready  
+    });
+</script>
     
 </body>
 </html>
