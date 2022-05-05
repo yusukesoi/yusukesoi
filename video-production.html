@@ -1,103 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Yusuke Soi Multi-disciplinary Artist</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-<link rel="stylesheet" href="yusuke.css">
-<link rel="stylesheet" href="transition.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Yusuke Soi Multi-disciplinary Artist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="yusuke.css">
+  <link rel="stylesheet" href="transition.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <style>
-  body,h1 {font-family: 'Open Sans', sans-serif}
-  h1, h2, h3, h4, h5, h6 {
-        font-family: "Open Sans", Arial, sans-serif;
-      }
+    body,h1 {font-family: 'Open Sans', sans-serif}
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Open Sans", Arial, sans-serif;
+    }
 
-      h1{
-        font-family: "Open Sans";
-        font-weight: 700;
-        font-size: 36px;
-        color: #0D0D0D;
-      }
-      
-      h2{
-        font-family: "Open Sans";
-        font-weight: 400;
-        font-size: 18px;
-        color: #4B4B4B;
-      }
-      
-      h3{
-        font-family: "Open Sans";
-        font-weight: 600;
-        font-size: 14px;
-        color: #0D0D0D;
-      }
+    h1{
+      font-family: "Open Sans";
+      font-weight: 700;
+      font-size: 36px;
+      color: #0D0D0D;
+    }
+    
+    h2{
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 18px;
+      color: #4B4B4B;
+    }
+    
+    h3{
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 14px;
+      color: #0D0D0D;
+    }
 
-      p{
-        font-family: "Open Sans";
-        font-size: 14px;
-        color: #4B4B4B;
-      }
-      
-      a{
-        font-family: "Open Sans";
-        font-size: 14px;
-        color: #4B4B4B;
-      }
-      .video-container {
-        overflow: hidden;
-        position: relative;
-        width:100%;
-      }
+    p{
+      font-family: "Open Sans";
+      font-size: 14px;
+      color: #4B4B4B;
+    }
+    
+    a{
+      font-family: "Open Sans";
+      font-size: 14px;
+      color: #4B4B4B;
+    }
+    .video-container {
+      overflow: hidden;
+      position: relative;
+      width:100%;
+    }
 
-      .video-container::after {
-          padding-top: 56.25%;
-          display: block;
-          content: '';
-      }
+    .video-container::after {
+      padding-top: 56.25%;
+      display: block;
+      content: '';
+    }
 
-      .video-container iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-      }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 70%;
+    }
 
-     .tile-padding {
-        padding:2px;
-      } 
-      .wrapper {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        /* display: inline-flex; */
-        /* position: absolute; */
-      }
-      .wrapper div {
-        overflow: hidden;
-      }
-      .wrapper img {
-        display: block;
-        width: auto;
-        height: 100%;
-      }
+    .tile-padding {
+      padding:2px;
+    } 
 
-      .side-margins{
-        padding:24px 200px;
-      }
 
-      a:link { text-decoration: none; }
-      a:visited { text-decoration: none; }
-      a:hover { text-decoration: none; }
-      a:active { text-decoration: none; }
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      /* display: inline-flex; */
+      /* position: absolute; */
+    }
+    .wrapper div {
+      overflow: hidden;
+    }
+    .wrapper img {
+      display: block;
+      width: auto;
+      height: 100%;
+    }
+
+    .side-margins{
+      padding:24px 200px;
+    }
+
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:active { text-decoration: none; }
 
     @media only screen and (max-width: 1024px) {
       .side-margins{
@@ -120,255 +125,256 @@
       .tile-padding {
         padding:8px;
       }
-}
-body {font-family: Arial, Helvetica, sans-serif;}
+    }
 
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-#myImg:hover {opacity: 0.7;}
+    #myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
+    
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+    .modal-body {
+      position:relative;
+      padding:0px;
+    }
 
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
 
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
+    /* Add Animation */
+    .modal-content, #caption {  
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
 
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
+    @-webkit-keyframes zoom {
+      from {-webkit-transform:scale(0)} 
+      to {-webkit-transform:scale(1)}
+    }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
+    @keyframes zoom {
+      from {transform:scale(0)} 
+      to {transform:scale(1)}
+    }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-</style>
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+      .modal-content {
+        width: 100%;
+      }
+    }
+
+    
+  </style>
 </head>
 <body>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content side-margins" style="max-width:1500px">
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content side-margins" style="max-width:1500px">
 
-<!-- Header -->
-<header class="w3-panel w3-center">
-<a href="index.html"><h1 style="margin-bottom:0px">Yusuke Soi</h1></a>
-  <h2 style="margin-bottom: 12px;">Theater Productions</h2>
-</header>
+  <!-- Header -->
+  <header class="w3-panel w3-center">
+  <a href="index.html"><h1 style="margin-bottom:0px">Yusuke Soi</h1></a>
+    <h2 style="margin-bottom: 12px;">Theater Productions</h2>
+  </header>
 
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
+  <!-- Page content -->
+
+  <div class="w3-content" style="max-width:1100px">
     <!-- About Section -->
-    <!-- <div class="w3-row w3-padding-64" id="about">
-      <div class="w3-col m6 w3-padding-large w3-hide-small">
-       
-        <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=ZMN3iwp4hX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-
-      </div>
-  
-      <div class="w3-col m6 w3-padding-large">
-        <h1 class="w3-center">[Project name]</h1><br>
-        <h5 class="w3-center">[role]</h5>
-        <p class="w3-large">[type i.e. side project]</p>
-        <p class="w3-large w3-text-grey w3-hide-medium">[description]</p>
-      </div>
-    </div>
-     -->
-    
     <!-- Projects -->
-    <!-- <div class="w3-row" id="menu"> -->
+    <div class="w3-row tile-padding" id="menu">
       <div class="w3-col l5 w3-padding-large">
-        <!-- <h1 class="w3-center">[project name]</h1><br> -->
         <h2>Anywhere but Earth @ Socks and Buttons</h2>
         <h3>Role: Producer, director, Editor</h3>
         <p class="w3-text-grey">A puppet web series, "Anywhere but Earth" was a collaboration of theater artists from children's theaters in the Bay Area. An alien captain, his robot friend, and a old samurai journey through space. They find friendships and hurdles of cultral misunderstandngs.</p>
       </div>
       <div class="w3-col l7 w3-padding-large">
-        <div class="video-container">
-          <img id="myImg" style="width:100%"  src="photos/ABESample3.png"></img>
-          <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZMN3iwp4hX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div id="caption"></div>
-          </div>
-        </div>
+        <img id="myImg" style="width:100%"  src="photos/ABESample3.png" data-toggle="modal"></img>
+      </div>
+
+      <!-- modal -->
+      <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- <div class="modal-body"> -->
+          <span class="close" aria-hidden="true" id="close">&times;</span>
+          <!-- <div class="embed-responsive embed-responsive-16by9"> -->
+            <iframe 
+              class="modal-content" 
+              width="560" height="315" 
+              src="https://www.youtube.com/embed/ZMN3iwp4hX4"
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>>
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div id="caption"></div> -->
       </div>
     </div>
 
 
-    <div class="w3-col l5 w3-padding-large">
-      <!-- <h1 class="w3-center">[project name]</h1><br> -->
-      <h2>Shrek the musical @ Tri-school Productions</h2>
-      <h3>Role: Producer, Art director, Editor</h3>
-      <p class="w3-text-grey">During the pandemic, most of high school theater shows were forced to adapt to perform online or create filmed performances. Shrek the musical was a 2h show that we filmed student actors individually and separately in front of a green screen to follow CDC rules for social distancing.</p>
-    </div>
-    <div class="w3-col l7 w3-padding-large">
-      <div class="video-container">
-        <img id="myImg" style="width:100%"  src="photos/ShrekSample0.png"></img>
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
-        </div>
-      </div>
-    </div>
 
-
-    <div class="w3-col l5 w3-padding-large">
-      <!-- <h1 class="w3-center">[project name]</h1><br> -->
-      <h2>Tono's Phone Call @ Socks and Buttons Production</h2>
-      <h3>Role: Producer, director, Editor</h3>
-      <p class="w3-text-grey"> A web series of an old samurai puppet interviewing his friends. The series celebrates the Bay Area theater artists through short sketches. </p>
-    </div>
-    <div class="w3-col l7 w3-padding-large">
-      <div class="video-container">
-        <img id="myImg" style="width:100%"  src="photos/TonoCallSample1.png"></img>
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="w3-col l5 w3-padding-large">
-      <!-- <h1 class="w3-center">[project name]</h1><br> -->
-      <h2>My Perfect Kastle @ Socks and Buttons Production</h2>
-      <h3>Role: Producer, director, Editor</h3>
-      <p class="w3-text-grey"> Japanese folklore web series.  </p>
-    </div>
-    <div class="w3-col l7 w3-padding-large">
-      <div class="video-container">
-        <img id="myImg" style="width:100%"  src="photos/MPKSample2.png"></img>
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <iframe class="modal-content" width="560" height="315" src="https://www.youtube.com/embed/DmiW12vcQYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div id="caption"></div>
-        </div>
-      </div>
-    </div>
-
-   
-
-    <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-row tile-padding" id="menu"> 
       <div class="w3-col l5 w3-padding-large">
-        <!-- <h1 class="w3-center">[project name]</h1><br> -->
+        <h2>Shrek the musical @ Tri-school Productions</h2>
+        <h3>Role: Producer, Art director, Editor</h3>
+        <p class="w3-text-grey">During the pandemic, most of high school theater shows were forced to adapt to perform online or create filmed performances. Shrek the musical was a 2h show that we filmed student actors individually and separately in front of a green screen to follow CDC rules for social distancing.</p>
+      </div>
+      <div class="w3-col l7 w3-padding-large">
+        <img id="myImg" style="width:100%"  src="photos/ShrekSample0.png"></img>
+      </div>
+    </div> 
+
+
+    <div class="w3-row tile-padding" id="menu">
+      <div class="w3-col l5 w3-padding-large">
+        <h2>Tono's Phone Call @ Socks and Buttons Production</h2>
+        <h3>Role: Producer, director, Editor</h3>
+        <p class="w3-text-grey"> A web series of an old samurai puppet interviewing his friends. The series celebrates the Bay Area theater artists through short sketches. </p>
+      </div>
+      <div class="w3-col l7 w3-padding-large">
+        
+          <img id="myImg" style="width:100%"  src="photos/TonoCallSample1.png"></img>
+        
+      </div>
+    </div>
+
+
+    <div class="w3-row tile-padding" id="menu"></div>
+      <div class="w3-col l5 w3-padding-large">
+        <h2>My Perfect Kastle @ Socks and Buttons Production</h2>
+        <h3>Role: Producer, director, Editor</h3>
+        <p class="w3-text-grey"> Japanese folklore web series.  </p>
+      </div>
+      <div class="w3-col l7 w3-padding-large">
+          <img id="myImg" style="width:100%"  src="photos/MPKSample2.png"></img>
+      </div>
+    </div>
+    
+
+    <div class="w3-row tile-padding" id="menu">
+      <div class="w3-col l5 w3-padding-large">
         <h2>[picture of a set built]</h2>
         <h3>[role]</h3>
         <p class="w3-text-grey">[description]</p>
       </div>
-        
       <div class="w3-col l7 w3-padding-large">
-        <div class="video-container">
           <iframe width="100%" src="https://www.youtube.com/embed/DmiW12vcQYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-        </div>
       </div>
     </div>
+    
   </div>
-</div>
-<!-- Footer -->
+  <!-- Footer -->
 
-<footer id="contact" class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
-  <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
-  <p>Yusuke</p>
-  <p>[phone number]</p>
-  <p>[email]</p>
-</footer>
+  <footer id="contact" class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+    <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+    <p>Yusuke</p>
+    <p>[phone number]</p>
+    <p>[email]</p>
+  </footer>
   <script>
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+    // when the modal is opened autoplay it  
+    $('#myModal').on('shown.bs.modal', function (e) {
+      // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+      $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    })
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+   
+    // stop playing the youtube video when I close the modal
+    $('#myModal').on('hide.bs.modal', function (e) {
+      // a poor man's stop video
+      $("#video").attr('src',$videoSrc); 
+    })  
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+    
+    
 </body>
 </html>
 
+
+
+<!-- modal code took from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img -->
